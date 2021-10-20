@@ -1,0 +1,5 @@
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+
+
+c:\Users\User\Desktop\ELBIT:/usr/share/nginx/html --name REUTCH -p 8080:80 nginx:mainline-alpine

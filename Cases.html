@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+ <script src="Cases.js"></script>
+ <label for="UserName">User Name:</label>
+<input type="text" value = "Reut" id="UserName"> 
+<div></div>
+<label for="CountryName">Country Name:</label>
+<input type="text" value = "Germany" id="CountryName">
+<div></div>
+<label for="CountryDate">Country Date:</label>
+<input type="date"  required pattern="\d{4}-\d{2}-\d{2}" id="CountryDate">
+<div></div>
+<label for="DateFrom">Date From:</label>
+<input type="date"  required pattern="\d{4}-\d{2}-\d{2}" id="DateFrom">
+<div></div>
+<label for="DateTo">Date To:</label>
+<input type="date"  required pattern="\d{4}-\d{2}-\d{2}" id="DateTo">
+<div></div>
+<button onclick="GetConfirmedCases()">Get Numer of cases</button>
+<div></div>
+<button onclick="AddCountry()">Add Country</button>
+<button onclick="DeleteCountry()">Delete Country</button>
+<button onclick="GetAllCountries()">Get All Countries</button>
+<div></div>
+<button onclick="NumberOfCases('deaths')">number of deaths By Country</button>
+<button onclick="NumberOfCases('confirmed')">number of confirmed cases By Country</button>
+<div></div>
+<label for="DateTo">לא עובד</label>
+<button onclick="HighestCases('deaths')">Country with highest deaths cases</button>
+<button onclick="HighestCases('confirmed')">Country with highest confirmed cases</button>
+
+<p id="TotalCountryByUser"></p>
+<p id="TotalCases"></p>
+
+</body>
+</html>
